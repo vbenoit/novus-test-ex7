@@ -18,6 +18,41 @@
                       {{ result.name.first }} - {{ result.name.last }}
                   </h2>
 
+                  <table class="table is-bordered is-striped is-narrow">
+                    <thead>
+                        <tr>
+                              <th>Information:</th>
+                              <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                              Location     
+                            </td>
+                            <td>
+                                {{ json result.location }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              Date of birth     
+                            </td>
+                            <td>
+                                {{ result.dob }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              Email     
+                            </td>
+                            <td>
+                                {{ result.email }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
         </div>
     </div>
